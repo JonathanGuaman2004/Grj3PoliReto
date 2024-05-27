@@ -27,6 +27,8 @@ public class App {
         numRepFig=ingresoDatos.nextInt();
         //Series numéricas alo
         System.out.println("Series Numéricas");
+        System.out.println("");
+        System.out.print("SN1: ");
         gj.jgSN1(numRepNum);
         //Series de caracteres
         System.out.println("Series de caracteres");
