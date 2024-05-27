@@ -18,7 +18,6 @@ public class GuamanJonathan {
                 jgSeg=suma;
             }
             System.out.println("");
-            System.out.println("");
         }
     }
 }
