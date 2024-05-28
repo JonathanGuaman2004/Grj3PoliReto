@@ -28,8 +28,11 @@ public class App {
 		System.out.println("|1| Indique el numero de repeticiones de las series numéricas");
 		do {
 			try {
-				numRepNum=Integer.parseInt(ingresoDatos.nextLine());
-				banderaRep=false;
+				do{
+					System.out.println("Ingrese un numero mayor o igual a 0");
+					numRepNum=Integer.parseInt(ingresoDatos.nextLine());
+					banderaRep=false;
+				}while(numRepNum<0);
 			} catch (NumberFormatException e){
 				System.out.println("Por favor Ingrese UN NUMERO");
 				banderaRep=true;
@@ -65,10 +68,10 @@ public class App {
 		System.out.println("________________________________________Series Numéricas________________________________________________________________________________");
 		System.out.println();
 		System.out.print("SN1: ");
-		gj.jgSN1(numRepNum);
+		gj.gjSN1(numRepNum);
 		System.out.println();
 		System.out.print("SN2: ");
-		gj.jgSN2(numRepNum);
+		gj.gjSN2(numRepNum);
 		System.out.println();
 		System.out.print("SN3: ");
 		System.out.println();
@@ -92,7 +95,7 @@ public class App {
 		System.out.println("________________________________________Series de caracteres________________________________________________________________________________");
 		System.out.println();
 		System.out.print("SC1: ");
-		gj.jgSC1(numRepCar,tipoCaracter);
+		gj.gjSC1(numRepCar,tipoCaracter);
 		System.out.println();
 		System.out.print("SC2: ");
 		System.out.println();
@@ -114,7 +117,7 @@ public class App {
 		System.out.println("________________________________________Series de figuras________________________________________________________________________________");
 		System.out.println();
 		System.out.println("F1:");
-		gj.jgF1(numRepFig);
+		gj.gjF1(numRepFig);
 		System.out.println();
 		System.out.println("F2:");
 		System.out.println();
@@ -127,7 +130,7 @@ public class App {
 		System.out.println("F6: ");
 		System.out.println();
 		System.out.println("F7: ");
-		gj.jgF7(numRepFig);
+		gj.gjF7(numRepFig);
 		System.out.println();
 		System.out.println("F8: ");
 		System.out.println();
@@ -140,7 +143,7 @@ public class App {
 		System.out.println("F12: ");
 		System.out.println();
 		System.out.println("F13: ");
-		gj.jgF13(numRepFig);
+		gj.gjF13(numRepFig);
 		System.out.println();
 		System.out.println("F14: ");
 		System.out.println();
@@ -153,7 +156,7 @@ public class App {
 		System.out.println("F18: ");
 		System.out.println();
 		System.out.println("F19: ");
-		gj.jgF19(numRepFig);
+		gj.gjF19(numRepFig);
 		ingresoDatos.close();
 	}
 }
