@@ -1,5 +1,13 @@
+/*
+ * Crea series numericas, caracteres y figuras
+ * @autor:      David Guanochanga
+ * @version:    1.0
+ */
 public class DavidGuanochanga {
 
+    /*
+     * Este método imprime la serie utilizado un ciclo for: 0 1 1 2 3 5 8 13 ...
+     */
     public void dgSN1(int dgnmrTerminos) {
         if (dgnmrTerminos > 0) {
             int dgtermino1 = 0;
@@ -27,6 +35,9 @@ public class DavidGuanochanga {
         System.out.println();
     }
 
+    /*
+     * Este método imprime la serie utilizado un ciclo for: 1 4 9 16 25 36 49 64 ...
+     */
     public void dgSN6(int dgnmrTerminos) {
         if (dgnmrTerminos > 0) {
             for (int i = 1; i <= dgnmrTerminos; i++) {
@@ -43,6 +54,10 @@ public class DavidGuanochanga {
         System.out.println();
     }
 
+    /*
+     * Este método imprime la cadena utilizado un ciclo for: \ | / - | \ | / - | \ |
+     * / - | ...
+     */
     public void dgSC5(int dgnmrTerminos) {
         if (dgnmrTerminos > 0) {
             String[] patron = { "\\", "|", "/", " -", " | " };
@@ -57,6 +72,10 @@ public class DavidGuanochanga {
         System.out.println();
     }
 
+    /*
+     * Este método imprime la cadena utilizado un ciclo for: a bbb ccccc ddddddd
+     * eeeeeeeee ...
+     */
     public void dgSC8(int dgnmrTerminos) {
         if (dgnmrTerminos > 0) {
             char dgletra = 'a';
@@ -78,6 +97,9 @@ public class DavidGuanochanga {
         System.out.println();
     }
 
+    /*
+     * Este método imprime la figura utilizado un ciclo for
+     */
     public void dgSF5(int dgnmrNiveles) {
         if (dgnmrNiveles > 0) {
             int dgfilas;
@@ -99,6 +121,9 @@ public class DavidGuanochanga {
         System.out.println();
     }
 
+    /*
+     * Este método imprime la figura utilizado un ciclo for
+     */
     public void dgSF11(int dgnmrNiveles) {
         if (dgnmrNiveles > 0) {
             for (int nivel = 1; nivel <= dgnmrNiveles; nivel++) {
@@ -117,6 +142,9 @@ public class DavidGuanochanga {
         System.out.println();
     }
 
+    /*
+     * Este método imprime la figura utilizado un ciclo for
+     */
     public void dgSF17(int dgnmrNiveles) {
         if (dgnmrNiveles > 0) {
             int a = 1;
