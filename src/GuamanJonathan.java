@@ -5,42 +5,42 @@
 public class GuamanJonathan {
 	/**crea una serie de acuerdo al tamano solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamano: escribe el tamano de la serie
+	 * @param gjTamano: escribe el tamano de la serie
 	 */
-	public void jgSN1(int jgTamano) {
-		if (jgTamano<=0){
+	public void gjSN1(int gjTamano) {
+		if (gjTamano<=0){
 			System.out.println();
-		}else if (jgTamano<2) {
+		}else if (gjTamano<2) {
 			System.out.println("0 ");
 		}else{
-			int jgPrim=0;
-			int jgSeg=1;
+			int gjPrim=0;
+			int gjSeg=1;
 			System.out.print("0 ");
 			System.out.print("1 ");
-			for(int jgRep=0;jgRep<jgTamano-2;jgRep++){
-				int suma=jgPrim+jgSeg;
+			for(int gjRep=0;gjRep<gjTamano-2;gjRep++){
+				int suma=gjPrim+gjSeg;
 				System.out.print(suma+" ");
-				jgPrim=jgSeg;
-				jgSeg=suma;
+				gjPrim=gjSeg;
+				gjSeg=suma;
 			}
 			System.out.println();
 		}
 	}
 	/**crea una serie de acuerdo al tamano solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamano: escribe el tamano de la serie
+	 * @param gjTamano: escribe el tamano de la serie
 	 */
-	public void jgSN2(int jgTamano) {
-		if (jgTamano<=0){
+	public void gjSN2(int gjTamano) {
+		if (gjTamano<=0){
 			System.out.println();
-		}else if (jgTamano<2) {
+		}else if (gjTamano<2) {
 			System.out.println("1 ");
 		}else{
-			for(int jgLug=1;jgLug<jgTamano+1;jgLug++) {
-				if((jgLug%2)==0) {
+			for(int gjLug=1;gjLug<gjTamano+1;gjLug++) {
+				if((gjLug%2)==0) {
 					System.out.print("0 ");
 				}else {
-					System.out.print(jgLug+" ");
+					System.out.print(gjLug+" ");
 				}
 			}
 			System.out.println();
@@ -48,17 +48,17 @@ public class GuamanJonathan {
 	}
 	/**crea una serie de acuerdo al tamano y caracter solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamano: escribe el tamano de la serie
+	 * @param gjTamano: escribe el tamano de la serie
 	 * @param tipoCaracter: escribe el carcter que aparezca en la serie
 	 */
-	public void jgSC1(int jgTamano,String tipoCaracter) {
-		if (jgTamano<0){
+	public void gjSC1(int gjTamano,String tipoCaracter) {
+		if (gjTamano<0){
 			System.out.println();
-		}else if (jgTamano<2) {
+		}else if (gjTamano<2) {
 			System.out.println(tipoCaracter+" ");
 		}else{
-			for(int jgLug=0;jgLug<jgTamano;jgLug++) {
-				if((jgLug%2)==0) {
+			for(int gjLug=0;gjLug<gjTamano;gjLug++) {
+				if((gjLug%2)==0) {
 					System.out.print(tipoCaracter+" ");
 				}else {
 					System.out.print("- ");
@@ -69,26 +69,26 @@ public class GuamanJonathan {
 	}
 	/**crea una figura de acuerdo al tamano solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamano: escribe el tamano de la figura
+	 * @param gjTamano: escribe el tamano de la figura
 	 */
-	public void jgF1(int jgTamano) {
-		if (jgTamano<=0){
+	public void gjF1(int gjTamano) {
+		if (gjTamano<=0){
 			System.out.println();
-		}else if (jgTamano==1) {
+		}else if (gjTamano==1) {
 			System.out.println("* ");
-		}else if(jgTamano==2){
+		}else if(gjTamano==2){
 			System.out.println("* *");
 			System.out.println("* *");
 		}else {
-			for(int jgLug=0;jgLug<jgTamano;jgLug++) {
-				if(jgLug==0||jgLug==jgTamano-1) {
-					for(int jgPos=0;jgPos<jgTamano;jgPos++) {
+			for(int gjLug=0;gjLug<gjTamano;gjLug++) {
+				if(gjLug==0||gjLug==gjTamano-1) {
+					for(int gjPos=0;gjPos<gjTamano;gjPos++) {
 						System.out.print("* ");
 					}
 					System.out.println();
 				}else {
 					System.out.print("* ");
-					for(int jgPos=0;jgPos<jgTamano-2;jgPos++) {
+					for(int gjPos=0;gjPos<gjTamano-2;gjPos++) {
 						System.out.print("  ");
 					}
 					System.out.println("* ");
@@ -98,22 +98,22 @@ public class GuamanJonathan {
 	}
 	/**crea una figura de acuerdo al tamano solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamano: escribe el tamano de la figura
+	 * @param gjTamano: escribe el tamano de la figura
 	 */
-	public void jgF7(int jgTamano) {
-		if (jgTamano<=0){
+	public void gjF7(int gjTamano) {
+		if (gjTamano<=0){
 			System.out.println();
-		}else if (jgTamano==1) {
+		}else if (gjTamano==1) {
 			System.out.println(" _ _ _ ");
-		}else if(jgTamano==2){
+		}else if(gjTamano==2){
 			System.out.println(" _ _ _");
 			System.out.println("      |_ _ _");
 		}else {
-			for(int jgLug=0;jgLug<jgTamano;jgLug++) {
-				for (int jgPos=0;jgPos<jgTamano;jgPos++) {
-					if((jgLug==0)&&(jgPos==0)) {
+			for(int gjLug=0;gjLug<gjTamano;gjLug++) {
+				for (int gjPos=0;gjPos<gjTamano;gjPos++) {
+					if((gjLug==0)&&(gjPos==0)) {
 						System.out.print(" _ _ _ ");
-					}else if(jgLug==jgPos) {
+					}else if(gjLug==gjPos) {
 						System.out.print("|_ _ _");
 					}else {
 						System.out.print("      ");
@@ -125,17 +125,17 @@ public class GuamanJonathan {
 	}
 	/**crea una figura de acuerdo al tamano solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamano: escribe el tamano de la figura
+	 * @param gjTamano: escribe el tamano de la figura
 	 */
-	public void jgF13(int jgTamano) {
-		if (jgTamano<=0){
+	public void gjF13(int gjTamano) {
+		if (gjTamano<=0){
 			System.out.println();
-		}else if (jgTamano==1) {
+		}else if (gjTamano==1) {
 			System.out.println("1");
 		}else {
-			for(int jgLug=1;jgLug<jgTamano+1;jgLug++) {
-				for (int jgPos=1;jgPos<jgLug+1;jgPos++) {
-					System.out.print(jgPos+" ");
+			for(int gjLug=1;gjLug<gjTamano+1;gjLug++) {
+				for (int gjPos=1;gjPos<gjLug+1;gjPos++) {
+					System.out.print(gjPos+" ");
 				}
 				System.out.println();
 			}
@@ -143,45 +143,45 @@ public class GuamanJonathan {
 	}
 	/**crea una figura de acuerdo al tamano solicitado
 	 * @author GuamanJonathan
-	 * @param jgTamanoInit: escribe el tamano de la figura
+	 * @param gjTamanoInit: escribe el tamano de la figura
 	 */
-	public void jgF19(int jgTamanoInit) {
-		if (jgTamanoInit<=0){
+	public void gjF19(int gjTamanoInit) {
+		if (gjTamanoInit<=0){
 			System.out.println();
-		}else if (jgTamanoInit==1) {
+		}else if (gjTamanoInit==1) {
 			System.out.println("* ");
-		}else if(jgTamanoInit==2){
+		}else if(gjTamanoInit==2){
 			System.out.println("* ");
 			System.out.println("* +");
 		}else {
 			System.out.println("* ");
 			System.out.println("* +");
-			int jgTamano=jgTamanoInit-2;
-			int [][] jgArreglo = new int [jgTamano][jgTamano];
-			for(int jgColum = 0;jgColum<jgTamano;jgColum++) {
-				jgArreglo[jgColum][0]=jgColum+3;
+			int gjTamano=gjTamanoInit-2;
+			int [][] gjArreglo = new int [gjTamano][gjTamano];
+			for(int gjColum = 0;gjColum<gjTamano;gjColum++) {
+				gjArreglo[gjColum][0]=gjColum+3;
 			}
-			int jgInic=3;
-			for(int jgColum = 0;jgColum<jgTamano;jgColum++) {
-				jgArreglo[jgColum][jgColum]=jgInic;
-				jgInic=jgInic+2;
+			int gjInic=3;
+			for(int gjColum = 0;gjColum<gjTamano;gjColum++) {
+				gjArreglo[gjColum][gjColum]=gjInic;
+				gjInic=gjInic+2;
 			}
-			if(jgArreglo[0].length>2) {
-				int jgFila=1;
-				for(int jgPlace=2;jgPlace<jgArreglo[0].length;jgPlace++) {
-					for(int jgPol=0;jgPol<jgFila;jgPol++) {
-						jgArreglo[jgPlace][jgPol+1]=jgArreglo[jgPlace-1][jgPol]+jgArreglo[jgPlace-1][jgPol+1];
+			if(gjArreglo[0].length>2) {
+				int gjFila=1;
+				for(int gjPlace=2;gjPlace<gjArreglo[0].length;gjPlace++) {
+					for(int gjPol=0;gjPol<gjFila;gjPol++) {
+						gjArreglo[gjPlace][gjPol+1]=gjArreglo[gjPlace-1][gjPol]+gjArreglo[gjPlace-1][gjPol+1];
 					}
-					jgFila++;
+					gjFila++;
 				}
 			}
-			for(int jgFilas=0;jgFilas<jgArreglo[0].length;jgFilas++) {
+			for(int gjFilas=0;gjFilas<gjArreglo[0].length;gjFilas++) {
 				System.out.print("* ");
-				for(int jgColumnas=0;jgColumnas<jgArreglo[0].length;jgColumnas++) {
-					if(jgArreglo[jgFilas][jgColumnas]==0) {
+				for(int gjColumnas=0;gjColumnas<gjArreglo[0].length;gjColumnas++) {
+					if(gjArreglo[gjFilas][gjColumnas]==0) {
 						System.out.print("");
 					}else {
-						System.out.print(jgArreglo[jgFilas][jgColumnas]+" ");
+						System.out.print(gjArreglo[gjFilas][gjColumnas]+" ");
 					}
 				}
 				System.out.print("+");
