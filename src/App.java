@@ -17,7 +17,7 @@ public class App {
 		//Declaracion
 		GuamanJonathan gj = new GuamanJonathan();
 		//Operaciones
-		System.out.println("Grupo3");
+		System.out.println("________________________________________Grupo3________________________________________");
 		System.out.println("Gualoto.Erick");
 		System.out.println("Gualpa.Nayeli");
 		System.out.println("Guaman.Jonathan");
