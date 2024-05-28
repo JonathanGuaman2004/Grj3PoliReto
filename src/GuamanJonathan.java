@@ -4,6 +4,8 @@
  */
 public class GuamanJonathan {
 	/**crea una serie de acuerdo al tamano solicitado
+	 * 0 1 1 2 3 5 8 13 21 ...
+	 * Fibonacci
 	 * @author GuamanJonathan
 	 * @param gjTamano: escribe el tamano de la serie
 	 */
@@ -27,6 +29,8 @@ public class GuamanJonathan {
 		}
 	}
 	/**crea una serie de acuerdo al tamano solicitado
+	 * 1 0 3 0 5 0 7 0 9
+	 * imprime los numeros impares separados pot ceros 0
 	 * @author GuamanJonathan
 	 * @param gjTamano: escribe el tamano de la serie
 	 */
@@ -47,6 +51,8 @@ public class GuamanJonathan {
 		}
 	}
 	/**crea una serie de acuerdo al tamano y caracter solicitado
+	 * + - + - + - + - +
+	 * toma un carcter y lo intercala con un menos -
 	 * @author GuamanJonathan
 	 * @param gjTamano: escribe el tamano de la serie
 	 * @param tipoCaracter: escribe el carcter que aparezca en la serie
@@ -68,6 +74,7 @@ public class GuamanJonathan {
 		}
 	}
 	/**crea una figura de acuerdo al tamano solicitado
+	 * en esta caso un cuadrado
 	 * @author GuamanJonathan
 	 * @param gjTamano: escribe el tamano de la figura
 	 */
@@ -97,6 +104,7 @@ public class GuamanJonathan {
 		}
 	}
 	/**crea una figura de acuerdo al tamano solicitado
+	 * en esta caso unas escaleras
 	 * @author GuamanJonathan
 	 * @param gjTamano: escribe el tamano de la figura
 	 */
@@ -124,6 +132,11 @@ public class GuamanJonathan {
 		}
 	}
 	/**crea una figura de acuerdo al tamano solicitado
+	 * en esta caso cada nivel va aumentando un numero
+	 * 1
+	 * 12
+	 * 123
+	 * 1234
 	 * @author GuamanJonathan
 	 * @param gjTamano: escribe el tamano de la figura
 	 */
@@ -142,6 +155,11 @@ public class GuamanJonathan {
 		}
 	}
 	/**crea una figura de acuerdo al tamano solicitado
+	 * en este caso se suman los dos numeros de los niveles anteriores a su fila
+	 * *
+	 * + *
+	 * + 3 *
+	 * + 4 5 *
 	 * @author GuamanJonathan
 	 * @param gjTamanoInit: escribe el tamano de la figura
 	 */
