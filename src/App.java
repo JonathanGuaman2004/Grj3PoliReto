@@ -41,8 +41,11 @@ public class App {
 		System.out.println("|2| Indique el numero de repeticiones de las series de caracteres");
 		do {
 			try {
-				numRepCar=Integer.parseInt(ingresoDatos.nextLine());
-				banderaRep=false;
+				do{
+					System.out.println("Ingrese un numero mayor o igual a 0");
+					numRepCar=Integer.parseInt(ingresoDatos.nextLine());
+					banderaRep=false;
+				}while(numRepCar<0);
 			} catch (NumberFormatException e){
 				System.out.println("Por favor Ingrese UN NUMERO");
 				banderaRep=true;
@@ -57,8 +60,11 @@ public class App {
 		System.out.println("|4| Indique el numero de repeticiones de las series de figuras");
 		do {
 			try {
-				numRepFig=Integer.parseInt(ingresoDatos.nextLine());
-				banderaRep=false;
+				do{
+					System.out.println("Ingrese un numero mayor o igual a 0");
+					numRepFig=Integer.parseInt(ingresoDatos.nextLine());
+					banderaRep=false;
+				}while(numRepFig<0);
 			} catch (NumberFormatException e){
 				System.out.println("Por favor Ingrese UN NUMERO");
 				banderaRep=true;
