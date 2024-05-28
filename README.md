@@ -1,18 +1,15 @@
-## Getting Started
+# Escuela Politécnica Nacional
+## Programación II
+### Ing. Patricio Michael Paccha Angamarca
+![Imagen](https://fis.epn.edu.ec/images/banner_fis.png)
+## Grupo 3
+### Integrantes:
+  * Erick Mateo Gualoto Tanicuchi 🙃
+  * Nayeli Anahi Gualpa Peña 😘
+  * Jonathan Steven Guaman Maza 😒
+  * David Fernando Guanochanga Pilicita 🤔
+  * Lizeth Mayeli Hernández Cusicagua 🫠
+  * Jhojan Sebastian Zambrano Curicho 😎
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## PoliReto
+Hola, este proyecto tiene el propósito de imprimir las cierto tipo de series numéricas, de caracteres y de figuras; sin mencionar que, el código esta hecho de tal manera que no se pueda colgar durante su ejecución ; además, se utiliza las funciones de ciclos `FOR`, `WHILE` y `DO - WHILE`
