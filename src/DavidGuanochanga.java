@@ -4,6 +4,26 @@
  * @version:    1.0
  */
 public class DavidGuanochanga {
+/**
+ * Creación de los getters y setters de las propiedades
+ */
+    private int dgnmrTerminos;
+    private int dgnmrNiveles;
+    public int getDgnmrTerminos() {
+        return dgnmrTerminos;
+    }
+
+    public void setDgnmrTerminos(int dgnmrTerminos) {
+        this.dgnmrTerminos = dgnmrTerminos;
+    }
+
+    public int getDgnmrNiveles() {
+        return dgnmrNiveles;
+    }
+
+    public void setDgnmrNiveles(int dgnmrNiveles) {
+        this.dgnmrNiveles = dgnmrNiveles;
+    }
 
     /*
      * Este método imprime la serie utilizado un ciclo for: 0 1 1 2 3 5 8 13 ...

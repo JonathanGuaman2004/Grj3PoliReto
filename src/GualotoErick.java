@@ -4,6 +4,26 @@
  */
 
 public class GualotoErick {
+/**
+ * Creación de los getters y setters de las propiedades
+ */
+    private int geTamano;
+    private String tipoCaracter;
+    public int getGeTamano() {
+        return geTamano;
+    }
+
+    public void setGeTamano(int geTamano) {
+        this.geTamano = geTamano;
+    }
+
+    public String getTipoCaracter() {
+        return tipoCaracter;
+    }
+
+    public void setTipoCaracter(String tipoCaracter) {
+        this.tipoCaracter = tipoCaracter;
+    }
 
     /**Serie creada segun el tamano ingresado
 	 * 0/1 1/3 1/5 2/7 3/9 5/11 8/13 13/15 ...

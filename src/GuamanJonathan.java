@@ -3,6 +3,24 @@
  * @version 1.0
  */
 public class GuamanJonathan {
+/**
+ * Creación de los getters y setters de las propiedades
+ */
+	private int gjTamano;
+	private String tipoCaracter;
+	
+	public int getGjTamano() {
+		return gjTamano;
+	}
+	public void setGjTamano(int gjTamano) {
+		this.gjTamano = gjTamano;
+	}
+	public String getTipoCaracter() {
+		return tipoCaracter;
+	}
+	public void setTipoCaracter(String tipoCaracter) {
+		this.tipoCaracter = tipoCaracter;
+	}
 	/**crea una serie de acuerdo al tamano solicitado
 	 * 0 1 1 2 3 5 8 13 21 ...
 	 * Fibonacci
@@ -161,26 +179,26 @@ public class GuamanJonathan {
 	 * + 3 *
 	 * + 4 5 *
 	 * @author GuamanJonathan
-	 * @param gjTamanoInit: escribe el tamano de la figura
+	 * @param gjTamano: escribe el tamano de la figura
 	 */
-	public void gjF19(int gjTamanoInit) {
-		if (gjTamanoInit<=0){
+	public void gjF19(int gjTamano) {
+		if (gjTamano<=0){
 			System.out.println();
-		}else if (gjTamanoInit==1) {
+		}else if (gjTamano==1) {
 			System.out.println("* ");
-		}else if(gjTamanoInit==2){
+		}else if(gjTamano==2){
 			System.out.println("* ");
 			System.out.println("* +");
 		}else {
 			System.out.println("* ");
 			System.out.println("* +");
-			int gjTamano=gjTamanoInit-2;
-			int [][] gjArreglo = new int [gjTamano][gjTamano];
-			for(int gjColum = 0;gjColum<gjTamano;gjColum++) {
+			int gjTamanoSec=gjTamano-2;
+			int [][] gjArreglo = new int [gjTamanoSec][gjTamanoSec];
+			for(int gjColum = 0;gjColum<gjTamanoSec;gjColum++) {
 				gjArreglo[gjColum][0]=gjColum+3;
 			}
 			int gjInic=3;
-			for(int gjColum = 0;gjColum<gjTamano;gjColum++) {
+			for(int gjColum = 0;gjColum<gjTamanoSec;gjColum++) {
 				gjArreglo[gjColum][gjColum]=gjInic;
 				gjInic=gjInic+2;
 			}
