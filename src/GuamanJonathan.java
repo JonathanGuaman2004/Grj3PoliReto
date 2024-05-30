@@ -68,6 +68,32 @@ public class GuamanJonathan {
 			System.out.println();
 		}
 	}
+	/**crea una serie de acuerdo al tamano solicitado
+	 * 3 8 13 18 23 28 33 38 ...
+	 * @author: GuamanJonathan
+	 * @param gjTamano: escribe el tamano de la serie
+	 */
+	public void gjSN8(int gjTamano){
+		int gjnumberThree=13;
+		int gjnumberEight=8;
+		if (gjTamano<=0){
+			System.out.println();
+		}else if (gjTamano==1) {
+			System.out.println("3 ");
+		}else{
+			System.out.print("3 ");
+			for(int gjLug=2;gjLug<gjTamano+1;gjLug++) {
+				if((gjLug%2)==0) {
+					System.out.print(gjnumberEight+" ");
+					gjnumberEight=gjnumberEight+10;
+				}else {
+					System.out.print(gjnumberThree+" ");
+					gjnumberThree=gjnumberThree+10;
+				}
+			}
+			System.out.println();
+		}
+	}
 	/**crea una serie de acuerdo al tamano y caracter solicitado
 	 * + - + - + - + - +
 	 * toma un carcter y lo intercala con un menos -

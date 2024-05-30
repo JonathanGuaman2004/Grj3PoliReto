@@ -4,6 +4,26 @@
  * @version 1.0
  */
 public class HernandezLizeth {
+/**
+ * Creación de los getters y setters de las propiedades
+ */
+    private int hlTamano;
+    private String hlTipoCaracter;
+    public int getHlTamano() {
+        return hlTamano;
+    }
+
+    public void setHlTamano(int hlTamano) {
+        this.hlTamano = hlTamano;
+    }
+
+    public String getHlTipoCaracter() {
+        return hlTipoCaracter;
+    }
+
+    public void setHlTipoCaracter(String hlTipoCaracter) {
+        this.hlTipoCaracter = hlTipoCaracter;
+    }
 
     /**
      * Crea una serie numerica con numeros fraccionarios

@@ -35,13 +35,13 @@ public class GualotoErick {
         if (geTamano <= 0){
             System.out.println("El tamano debe ser mayor a 0");
         }else if (geTamano < 2){
-            System.out.println("0/1");
+            System.out.println("0/1 ");
         }else{
             int geNumerador     = 0;
             int geDenominador   = 1;
             int geAnterior      = 0;
             int gePrimero       = 1;
-            System.out.println("0/1");
+            System.out.print("0/1");
             for (int geBucle = 0; geBucle < geTamano-1; geBucle++ ){
                     geDenominador = geDenominador +2;
                     geNumerador = geAnterior + gePrimero;
