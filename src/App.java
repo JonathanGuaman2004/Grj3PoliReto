@@ -21,6 +21,7 @@ public class App {
 		GualpaNayeli gn = new GualpaNayeli();
 		DavidGuanochanga gd = new DavidGuanochanga();
 		HernandezLizeth lh = new HernandezLizeth();
+		ZambranoJhojan zj = new ZambranoJhojan();
 		//Operaciones
 		System.out.println("________________________________________Grupo3________________________________________");
 		System.out.println("Gualoto.Erick");
@@ -97,6 +98,7 @@ public class App {
 		System.out.print("SN6: ");
 		gd.dgSN6(numRepNum);
 		System.out.print("SN7: ");
+		zj.jzSN7(numRepNum);
 		System.out.println();
 		System.out.print("SN8: ");
 		gj.gjSN8(numRepNum);
@@ -128,6 +130,7 @@ public class App {
 		System.out.print("SC5: ");
 		gd.dgSC5(numRepCar);
 		System.out.print("SC6: ");
+		zj.jzSC6(numRepCar);
 		System.out.println();
 		System.out.print(" ");
 		gn.gnSC7(numRepCar, unCaracter);
@@ -136,6 +139,7 @@ public class App {
 		System.out.print("SC8: ");
 		gd.dgSC8(numRepCar);
 		System.out.print("SC9: ");
+		zj.jzSC9(numRepCar);
 		//Series de Figuras
 		System.out.println();
 		System.out.println("________________________________________Series de figuras________________________________________________________________________________");
@@ -154,6 +158,7 @@ public class App {
 		System.out.println("F5: ");
 		gd.dgSF5(numRepFig);
 		System.out.println("F6: ");
+		zj.jzF6(unCaracter,numRepFig*numRepFig,numRepFig);
 		System.out.println();
 		System.out.println("F7: ");
 		gj.gjF7(numRepFig);
@@ -170,6 +175,7 @@ public class App {
 		System.out.println("F11: ");
 		gd.dgSF11(numRepFig);
 		System.out.println("F12: ");
+		zj.jzF12(numRepFig);
 		System.out.println();
 		System.out.println("F13: ");
 		gj.gjF13(numRepFig);
@@ -185,6 +191,7 @@ public class App {
 		System.out.println("F17: ");
 		gd.dgSF17(numRepFig);
 		System.out.println("F18: ");
+		zj.jzF18(numRepFig);
 		System.out.println();
 		System.out.println("F19: ");
 		gj.gjF19(numRepFig);
