@@ -27,6 +27,9 @@ public class GuamanJonathanPrt2 {
         }
         System.out.println("La cantidad de vocales en la frase es: "+numero); 
     }
+    /**
+     * Pedir una frase y presentarla en mayusculas y sin la J
+     */
     public void gjCC7(){
         int tamano;
         String nuevo="";
@@ -43,6 +46,9 @@ public class GuamanJonathanPrt2 {
         }
         System.out.println("La frase en mayusculas y sin la (j) es el siguiente: "+nuevo.toUpperCase()); 
     }
+    /**
+     * Crear un matriz donde forme una X con su nombre y apellido
+     */
     public void gjArr4(){
         String nombre="Jonathan", apellido="Guaman";
         int tamMay;
