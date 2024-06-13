@@ -10,6 +10,7 @@ public class App {
 	public static void main(String[] args) throws Exception {
 		//variables
 		Observador obs = new Observador();
-		obs.selecionarOpc();
+		//obs.selecionarOpc();
+		obs.imprimirEjerPartTwo();
 	}
 }

@@ -11,7 +11,6 @@ public class Observador {
 	    int numRepFig=0;
 	    char unCaracter;
 	    String tipoCaracter;
-	    Boolean banderaRep;
 	    //Operaciones
 	    System.out.println("________________________________________Grupo3________________________________________");
 	    System.out.println("Gualoto.Erick");
@@ -22,31 +21,9 @@ public class Observador {
 	    System.out.println("Zambrano.Jhojan");
 	    System.out.println();
 	    System.out.println("|1| Indique el numero de repeticiones de las series numéricas");
-	    do {
-	    	try {
-	    		do{
-	    			System.out.println("Ingrese un numero mayor o igual a 0");
-	    			numRepNum=Integer.parseInt(App.ingresoDatos.nextLine());
-	    			banderaRep=false;
-	    		}while(numRepNum<0);
-	    	} catch (NumberFormatException e){
-	    		System.out.println("Por favor Ingrese UN NUMERO");
-	    		banderaRep=true;
-	    		}
-	    }while(banderaRep);
+	    numRepNum = verificarIngreso(numRepNum);
 	    System.out.println("|2| Indique el numero de repeticiones de las series de caracteres");
-	    do {
-	    	try {
-	    		do{
-	    			System.out.println("Ingrese un numero mayor o igual a 0");
-	    			numRepCar=Integer.parseInt(App.ingresoDatos.nextLine());
-	    			banderaRep=false;
-	    		}while(numRepCar<0);
-	    	} catch (NumberFormatException e){
-	    		System.out.println("Por favor Ingrese UN NUMERO");
-	    		banderaRep=true;
-	    	}
-	    }while(banderaRep);
+	    numRepCar = verificarIngreso(numRepCar);
 	    System.out.println("|3| Indique el caracter a usar en las series de caracteres (solo uno)");
 	    tipoCaracter=App.ingresoDatos.nextLine();
 	    while(tipoCaracter.length()!=1) {
@@ -54,21 +31,55 @@ public class Observador {
 	    	tipoCaracter=App.ingresoDatos.nextLine();
 	    }
 	    System.out.println("|4| Indique el numero de repeticiones de las series de figuras");
-	    do {
-	    	try {
-	    		do{
-	    			System.out.println("Ingrese un numero mayor o igual a 0");
-	    			numRepFig=Integer.parseInt(App.ingresoDatos.nextLine());
-	    			banderaRep=false;
-	    		}while(numRepFig<0);
-	    	} catch (NumberFormatException e){
-	    		System.out.println("Por favor Ingrese UN NUMERO");
-	    		banderaRep=true;
-	    	}
-	    }while(banderaRep);
+	    numRepFig = verificarIngreso(numRepFig);
 	    unCaracter=tipoCaracter.charAt(0);
         imprimirEjerPartOne(numRepNum, numRepCar, numRepFig, unCaracter, tipoCaracter);
     }
+public void imprimirEjerPartTwo() {
+	// Declaracion
+	GuamanJonathanPrt2 gjp2=new GuamanJonathanPrt2();
+	//operaciones
+	System.out.println("________________________________________Cadenas de caracteres________________________________________________________________________________");
+	System.out.print("\nC01: ");
+	gjp2.gjCC1();
+	System.out.print("\nC02: ");
+	System.out.print("\nC03: ");
+	System.out.print("\nC04: ");
+	System.out.print("\nC05: ");
+	System.out.print("\nC06: ");
+	System.out.print("\nC07: ");
+	gjp2.gjCC7();
+	System.out.print("\nC08: ");
+	System.out.print("\nC09: ");
+	System.out.println("________________________________________Arrays________________________________________________________________________________");
+	System.out.print("\nA01: ");
+	System.out.print("\nA02: ");
+	System.out.print("\nA03: ");
+	System.out.print("\nA04: ");
+	gjp2.gjArr4();
+	System.out.print("\nA05: ");
+}
+/**
+ * Metodo para verificar el ingreso de valores sea un numero mayor a 0 y en caso de errores
+ * @param numRepNum: valor o dato ingresado
+ * @return> retorna el valor que se admite
+ */
+	private int verificarIngreso(int numRepNum) {
+		Boolean banderaRep;
+		do {
+			try {
+				do{
+					System.out.println("Ingrese un numero mayor o igual a 0");
+					numRepNum=Integer.parseInt(App.ingresoDatos.nextLine());
+					banderaRep=false;
+				}while(numRepNum<0);
+			} catch (NumberFormatException e){
+				System.out.println("Por favor Ingrese UN NUMERO");
+				banderaRep=true;
+				}
+		}while(banderaRep);
+		return numRepNum;
+	}
 /**
  * Clase que imprime la primera parte d elos metodos
  * @param numRepNum: numero de repeticiones de las series numericas
