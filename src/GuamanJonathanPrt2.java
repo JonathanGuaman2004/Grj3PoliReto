@@ -1,13 +1,26 @@
-
-
 /**clase con algunos metodos de la segunda parte del polireto
  * @author GuamanJonathan
  * @version 1.0
  */
 public class GuamanJonathanPrt2 {
     private String fraseUno;
-    private int numero=0;
+    private int numero;
+    private int barraTam;
+    private int longSenal;
+    private boolean confirmar;
+/**
+ * Estos valores permiten dar colores al texto
+ */
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_GREEN = "\u001B[32m";
+    private static final String ANSI_YELLOW = "\u001B[33m";
+    private static final String ANSI_RESET = "\u001B[0m";
 
+    public GuamanJonathanPrt2(){
+        numero=0;
+        barraTam=19;
+        longSenal=10;
+    }
     /**
      * Pedir una frase y contador las vocales
      */
@@ -72,7 +85,7 @@ public class GuamanJonathanPrt2 {
             for(int col=0;col<tamMay;col++){
                 try {
                     if((tamMay-fil-1==col)){
-                        matriz[fil][col]=Character.toString(apellido.charAt(col));
+                        matriz[col][fil]=Character.toString(apellido.charAt(col));
                     }
                 } catch (Exception e) {
                 }
@@ -91,13 +104,86 @@ public class GuamanJonathanPrt2 {
             System.out.println("]");
         }
     }
+    /**
+     * Crear una barra es de 20 caracteres, la barra avanza cambiando la punta entre > -
+     */
     public void gjLoad5(){
-        
+        int porcentaje;
+        for(int i=1;i<barraTam+2;i++){
+            if((i%2)==0){
+                porcentaje=i*5;
+                System.out.print("\r"+"["+"=".repeat(i-1)+"-"+" ".repeat(barraTam-i+1)+"] "+porcentaje+"%");
+                tiempoRetraso();
+            }else{
+                porcentaje=i*5;
+                System.out.print("\r"+"["+"=".repeat(i-1)+">"+" ".repeat(barraTam-i+1)+"] "+porcentaje+"%");
+                tiempoRetraso();
+            }
+        }
     }
+    private void tiempoRetraso() {
+        try {
+            Thread.sleep(150);
+        } catch (InterruptedException e) {}
+    }
+    /**
+     * Generar un numero randon entre 0 a 10 para simular la longitud de cada señal. 
+     * Este nuemero debe servir para dibujar la señal de forma simetrica a la izquierda y derecha, con un eje central. 
+     * Agregar color y con un nivel de 50
+     */
     public void gjLoad11(){
-        
+        int valorRandom;
+        for(int niv=0;niv<50;niv++){
+            valorRandom=(int)(Math.random()*10+1);
+            if(valorRandom<=4){
+                System.out.println(ANSI_GREEN+"\r"+" ".repeat(longSenal-valorRandom)
+                                    +"-".repeat(valorRandom)
+                                    +"|"+"-".repeat(valorRandom)+" ".repeat(longSenal-valorRandom)+ANSI_RESET);
+                tiempoRetraso();
+            }else if(valorRandom>=9){
+                System.out.println(ANSI_RED+"\r"+" ".repeat(longSenal-valorRandom)
+                                    +"-".repeat(valorRandom)
+                                    +"|"+"-".repeat(valorRandom)+" ".repeat(longSenal-valorRandom)+ANSI_RESET);
+                tiempoRetraso();
+            }else{
+                System.out.println(ANSI_YELLOW+"\r"+" ".repeat(longSenal-valorRandom)
+                                    +"-".repeat(valorRandom)
+                                    +"|"+"-".repeat(valorRandom)+" ".repeat(longSenal-valorRandom)+ANSI_RESET);
+                tiempoRetraso();
+            }  
+        }
     }
+    /**
+     * crear un metodo recursivo para obtener la conteoProgregresivoHasta(n)
+     */
     public void gjRec5(){
+        int nuevo=0;
+        System.out.println("A continuación ingrese un numero a contar progresivamente");
+        do{
+            try {
+                System.out.println("un numero".toUpperCase());
+                nuevo=Integer.parseInt(App.ingresoDatos.nextLine());
+                confirmar=false;
+            } catch (Exception e) {
+                confirmar=true;
+            }
+        }while(confirmar);
+        System.out.println("Contero");
+        contarProgesivamente(nuevo,nuevo);
+    }
+    /**
+     * metodo de recursion que cuenta progresivamente
+     * @param n: valor en el que termina
+     * @param m: valor de referencia
+     */
+    public void contarProgesivamente(int n,int m){
+        if((n-m)==n){
+            System.out.println(n);
+        }else{
+            tiempoRetraso();
+            System.out.println(n-m);
+            contarProgesivamente(n, m-1);
+        }
         
     }
     public String getFraseUno() {
