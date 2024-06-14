@@ -46,7 +46,7 @@ public class GuamanJonathanPrt2 {
     public void gjCC7(){
         int tamano;
         String nuevo="";
-        System.out.println("A continuación ingrese una frase para retirar l (j) y colocarlo en mayusculas");
+        System.out.println("A continuación ingrese una frase para retirar la (j) y colocarlo en mayusculas");
         fraseUno=App.ingresoDatos.nextLine();
         tamano=fraseUno.length();
         System.out.println("Usted ingreso la frase: "+fraseUno);

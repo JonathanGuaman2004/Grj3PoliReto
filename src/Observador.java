@@ -2,58 +2,69 @@
  * Clase en la que se ejecuta todo lo que ve el observador del proyecto
  */
 public class Observador {
+	
+	private String fraseAyuda;
+	private char unCaracter;
+	private String tipoCaracter;
 	/**
 	 * Seleccionador de de los parametros y ejecución de los metodos
 	 */
-		public void selecionarOpc(){
-			int numRepNum=0;
-			int numRepCar=0;
-			int numRepFig=0;
-			char unCaracter;
-			String tipoCaracter;
-			//Operaciones
-			System.out.println("________________________________________Grupo3________________________________________");
-			System.out.println("Gualoto.Erick");
-			System.out.println("Gualpa.Nayeli");
-			System.out.println("Guaman.Jonathan");
-			System.out.println("Guanochanga.David");
-			System.out.println("Hernandez.Lizeth");
-			System.out.println("Zambrano.Jhojan");
-			System.out.println();
-			System.out.println("|1| Indique el numero de repeticiones de las series numéricas");
-			numRepNum = verificarIngreso(numRepNum);
-			System.out.println("|2| Indique el numero de repeticiones de las series de caracteres");
-			numRepCar = verificarIngreso(numRepCar);
-			System.out.println("|3| Indique el caracter a usar en las series de caracteres (solo uno)");
+	public void selecionarOpc(){
+		int numRepNum=0;
+		int numRepCar=0;
+		int numRepFig=0;
+		//Operaciones
+		System.out.println("________________________________________Grupo3________________________________________");
+		System.out.println("Gualoto.Erick");
+		System.out.println("Gualpa.Nayeli");
+		System.out.println("Guaman.Jonathan");
+		System.out.println("Guanochanga.David");
+		System.out.println("Hernandez.Lizeth");
+		System.out.println("Zambrano.Jhojan");
+		System.out.println();
+		System.out.println("|1| Indique el numero de repeticiones de las series numéricas");
+		numRepNum = verificarIngreso(numRepNum);
+		System.out.println("|2| Indique el numero de repeticiones de las series de caracteres");
+		numRepCar = verificarIngreso(numRepCar);
+		System.out.println("|3| Indique el caracter a usar en las series de caracteres (solo uno)");
+		tipoCaracter=App.ingresoDatos.nextLine();
+		while(tipoCaracter.length()!=1) {
+			System.out.println("SOLO UNO");
 			tipoCaracter=App.ingresoDatos.nextLine();
-			while(tipoCaracter.length()!=1) {
-				System.out.println("SOLO UNO");
-				tipoCaracter=App.ingresoDatos.nextLine();
-			}
-			System.out.println("|4| Indique el numero de repeticiones de las series de figuras");
-			numRepFig = verificarIngreso(numRepFig);
-			unCaracter=tipoCaracter.charAt(0);
-			imprimirEjerPartOne(numRepNum, numRepCar, numRepFig, unCaracter, tipoCaracter);
 		}
+		System.out.println("|4| Indique el numero de repeticiones de las series de figuras");
+		numRepFig = verificarIngreso(numRepFig);
+		unCaracter=tipoCaracter.charAt(0);
+		imprimirEjerPartOne(numRepNum, numRepCar, numRepFig, unCaracter, tipoCaracter);
+	}
 		/**
 		 * Metodo que imprime l parte 2 de los poliretos
 		 */
 	public void imprimirEjerPartTwo() {
 		// Declaracion
 		GuamanJonathanPrt2 gjp2=new GuamanJonathanPrt2();
+		DavidGuanochangaPrt2 gdp2=new DavidGuanochangaPrt2();
+		GualotoErickPrt2 gep2=new GualotoErickPrt2();
 		//operaciones
 		System.out.println("________________________________________Cadenas de caracteres________________________________________________________________________________");
 		System.out.print("\nC01: ");
-		//gjp2.gjCC1();
+		gjp2.gjCC1();
 		System.out.print("\nC02: ");
+		System.out.println("A continuación ingrese una frase para contar las letras");
+        fraseAyuda=(App.ingresoDatos.nextLine());
+        System.out.println("Usted ingreso la frase: "+fraseAyuda);
+		gdp2.dgC02(null);
 		System.out.print("\nC03: ");
+		gep2.geCC3();
 		System.out.print("\nC04: ");
 		System.out.print("\nC05: ");
 		System.out.print("\nC06: ");
 		System.out.print("\nC07: ");
-		//gjp2.gjCC7();
+		gjp2.gjCC7();
 		System.out.print("\nC08: ");
+		gdp2.dgC08();
 		System.out.print("\nC09: ");
+		gep2.geCC9();
 		System.out.println("________________________________________Arrays________________________________________________________________________________");
 		System.out.print("\nA01: ");
 		System.out.print("\nA02: ");
@@ -61,29 +72,36 @@ public class Observador {
 		System.out.print("\nA04: ");
 		gjp2.gjArr4();
 		System.out.print("\nA05: ");
+		gdp2.dgA05();
 		System.out.println("________________________________________Loading________________________________________________________________________________");
-		System.out.print("\nL01: ");
+		System.out.println("\nL01: ");
+		gep2.geLoad1();
 		System.out.print("\nL02: ");
 		System.out.print("\nL03: ");
-		System.out.print("\nL04: ");
-		System.out.print("\nL05: ");
+		System.out.println("\nL04: ");
+		System.out.println("\nL05: ");
 		gjp2.gjLoad5();
 		System.out.print("\nL06: ");
+		gdp2.dgL06();
 		System.out.print("\nL07: ");
+		gep2.geLoad7();
 		System.out.print("\nL08: ");
 		System.out.print("\nL09: ");
 		System.out.print("\nL10: ");
 		System.out.print("\nL11: ");
 		gjp2.gjLoad11();
 		System.out.print("\nL12: ");
+		gdp2.dgL12();
 		System.out.println("________________________________________Recursion________________________________________________________________________________");
 		System.out.print("\nR01: ");
+		gep2.geRec1();
 		System.out.print("\nR02: ");
 		System.out.print("\nR03: ");
 		System.out.print("\nR04: ");
 		System.out.print("\nR05: ");
 		gjp2.gjRec5();
 		System.out.print("\nR06: ");
+		
 	}
 	/**
 	 * Metodo para verificar el ingreso de valores sea un numero mayor a 0 y en caso de errores
