@@ -118,4 +118,21 @@ public class GualotoErickPrt2 {
                 } else 
                     return n * factorial(n - 1);
         }
+
+    /* Crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance */
+        public void geRec6(){
+            System.out.print("Ingrese el valor de conteo regresivo: ");
+            int n = App.ingresoDatos.nextInt();
+            conteoRegresivo(n);
+        }
+
+            public void conteoRegresivo(int n){
+                if (n < 0) 
+                    return;
+            
+                System.out.println(n);
+
+                conteoRegresivo(n - 1);
+                
+            }
 }
