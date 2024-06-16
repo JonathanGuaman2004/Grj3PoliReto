@@ -39,13 +39,16 @@ public class Observador {
 	}
 		/**
 		 * Metodo que imprime l parte 2 de los poliretos
+		 * @throws InterruptedException 
 		 */
-	public void imprimirEjerPartTwo() {
+	public void imprimirEjerPartTwo() throws InterruptedException {
 		// Declaracion
 		GuamanJonathanPrt2 gjp2=new GuamanJonathanPrt2();
 		DavidGuanochangaPrt2 gdp2=new DavidGuanochangaPrt2();
 		GualotoErickPrt2 gep2=new GualotoErickPrt2();
 		GualpaNayeliPrt2 gnp2 =new GualpaNayeliPrt2();
+		ZambranoJhojanPrt2 zjp2 = new ZambranoJhojanPrt2();
+		HernandezLizethPrt2 hlp2 = new HernandezLizethPrt2();
 		//operaciones
 		System.out.println("________________________________________Cadenas de caracteres________________________________________________________________________________");
 		System.out.print("\nC01: ");
@@ -58,10 +61,12 @@ public class Observador {
 		System.out.print("\nC03: ");
 		gep2.geCC3();
 		System.out.print("\nC04: ");
+		zjp2.zjCC04();
 		System.out.print("\nC05: ");
 		System.out.println();
 		gnp2.gnCC05();
 		System.out.print("\nC06: ");
+		hlp2.hlCC6();
 		System.out.print("\nC07: ");
 		gjp2.gjCC7();
 		System.out.print("\nC08: ");
@@ -70,10 +75,12 @@ public class Observador {
 		gep2.geCC9();
 		System.out.println("________________________________________Arrays________________________________________________________________________________");
 		System.out.print("\nA01: ");
+		zjp2.zjA01();
 		System.out.print("\nA02: ");
 		System.out.println();
 		gnp2.gnA02();
 		System.out.print("\nA03: ");
+		hlp2.hlArr3();
 		System.out.print("\nA04: ");
 		gjp2.gjArr4();
 		System.out.print("\nA05: ");
@@ -82,10 +89,12 @@ public class Observador {
 		System.out.println("\nL01: ");
 		gep2.geLoad1();
 		System.out.print("\nL02: ");
+		zjp2.zjL02();
 		System.out.print("\nL03: ");
 		System.out.println();
 		gnp2.gnL03();
 		System.out.println("\nL04: ");
+		hlp2.hlLoad4();
 		System.out.println("\nL05: ");
 		gjp2.gjLoad5();
 		System.out.print("\nL06: ");
@@ -94,10 +103,12 @@ public class Observador {
 		System.out.print("\nL07: ");
 		gep2.geLoad7();
 		System.out.print("\nL08: ");
+		zjp2.zjL08();
 		System.out.print("\nL09: ");
 		System.out.println();
 		gnp2.gnL09();
 		System.out.print("\nL10: ");
+		hlp2.hlLoad10();
 		System.out.print("\nL11: ");
 		gjp2.gjLoad11();
 		System.out.print("\nL12: ");
@@ -106,12 +117,15 @@ public class Observador {
 		System.out.print("\nR01: ");
 		gep2.geRec1();
 		System.out.print("\nR02: ");
+		zjp2.zjR02();
 		System.out.print("\nR03: ");
 		gnp2.gnR03();
 		System.out.print("\nR04: ");
+		hlp2.hlRec4();
 		System.out.print("\nR05: ");
 		gjp2.gjRec5();
 		System.out.print("\nR06: ");
+		gep2.geRec6();
 		
 	}
 	/**
@@ -151,34 +165,43 @@ public class Observador {
 			DavidGuanochanga gd = new DavidGuanochanga();
 			HernandezLizeth lh = new HernandezLizeth();
 			ZambranoJhojan zj = new ZambranoJhojan();
+			GualotoErickPrt2 gep2=new GualotoErickPrt2();
 			System.out.println("________________________________________Series Numéricas________________________________________________________________________________");
 			System.out.println();
 			System.out.print("SN1: ");
 			gj.gjSN1(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SN2: ");
 			gj.gjSN2(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SN3: ");
 			ge.geSN3(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SN4: ");
 			lh.hlSN4(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print(" ");
 			gn.gnSN5(numRepNum);
 			System.out.println();
 			System.out.print("SN6: ");
 			gd.dgSN6(numRepNum);
+			gep2.geLoad1();
 			System.out.print("SN7: ");
 			zj.jzSN7(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SN8: ");
 			gj.gjSN8(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SN9: ");
 			ge.geSN9(numRepNum);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SN10: ");
 			lh.hlSN10(numRepNum);
 			System.out.println();
@@ -188,87 +211,114 @@ public class Observador {
 			System.out.println();
 			System.out.println("________________________________________Series de caracteres________________________________________________________________________________");
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SC1: ");
 			gj.gjSC1(numRepCar,tipoCaracter);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SC2: ");
 			ge.geSC2(numRepCar, tipoCaracter);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SC3: ");
 			lh.hlSC3(numRepCar, tipoCaracter);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print(" ");
 			gn.gnSC4(numRepCar, unCaracter);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SC5: ");
 			gd.dgSC5(numRepCar);
+			gep2.geLoad1();
 			System.out.print("SC6: ");
 			zj.jzSC6(numRepCar);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print(" ");
 			gn.gnSC7(numRepCar, unCaracter);
 			System.out.println();
 			System.out.println();
+			gep2.geLoad1();
 			System.out.print("SC8: ");
 			gd.dgSC8(numRepCar);
+			gep2.geLoad1();
 			System.out.print("SC9: ");
 			zj.jzSC9(numRepCar);
 			//Series de Figuras
 			System.out.println();
 			System.out.println("\n________________________________________Series de figuras________________________________________________________________________________");
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F1:");
 			gj.gjF1(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F2:");
 			ge.geF2(numRepFig, tipoCaracter);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F3:");
 			lh.hlF3(numRepFig);
 			System.out.println(" ");
+			gep2.geLoad1();
 			gn.gnSF4(numRepFig, unCaracter);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F5: ");
 			gd.dgSF5(numRepFig);
+			gep2.geLoad1();
 			System.out.println("F6: ");
 			zj.jzF6(unCaracter,numRepFig*numRepFig,numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F7: ");
 			gj.gjF7(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F8: ");
 			ge.geF8(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F9: ");
 			lh.hlF9(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println(" ");
 			gn.gnSF10(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F11: ");
 			gd.dgSF11(numRepFig);
+			gep2.geLoad1();
 			System.out.println("F12: ");
 			zj.jzF12(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F13: ");
 			gj.gjF13(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F14: ");
 			ge.geF14(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F15: ");
 			lh.hlF15(numRepFig);
+			gep2.geLoad1();
 			System.out.println(" ");
 			gn.gnSF16(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F17: ");
 			gd.dgSF17(numRepFig);
+			gep2.geLoad1();
 			System.out.println("F18: ");
 			zj.jzF18(numRepFig);
 			System.out.println();
+			gep2.geLoad1();
 			System.out.println("F19: ");
 			gj.gjF19(numRepFig);
-			App.ingresoDatos.close();
 		}
 	}
 	
