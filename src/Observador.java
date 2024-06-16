@@ -45,6 +45,7 @@ public class Observador {
 		GuamanJonathanPrt2 gjp2=new GuamanJonathanPrt2();
 		DavidGuanochangaPrt2 gdp2=new DavidGuanochangaPrt2();
 		GualotoErickPrt2 gep2=new GualotoErickPrt2();
+		GualpaNayeliPrt2 gnp2 =new GualpaNayeliPrt2();
 		//operaciones
 		System.out.println("________________________________________Cadenas de caracteres________________________________________________________________________________");
 		System.out.print("\nC01: ");
@@ -58,6 +59,8 @@ public class Observador {
 		gep2.geCC3();
 		System.out.print("\nC04: ");
 		System.out.print("\nC05: ");
+		System.out.println();
+		gnp2.gnCC05();
 		System.out.print("\nC06: ");
 		System.out.print("\nC07: ");
 		gjp2.gjCC7();
@@ -68,6 +71,8 @@ public class Observador {
 		System.out.println("________________________________________Arrays________________________________________________________________________________");
 		System.out.print("\nA01: ");
 		System.out.print("\nA02: ");
+		System.out.println();
+		gnp2.gnA02();
 		System.out.print("\nA03: ");
 		System.out.print("\nA04: ");
 		gjp2.gjArr4();
@@ -78,6 +83,8 @@ public class Observador {
 		gep2.geLoad1();
 		System.out.print("\nL02: ");
 		System.out.print("\nL03: ");
+		System.out.println();
+		gnp2.gnL03();
 		System.out.println("\nL04: ");
 		System.out.println("\nL05: ");
 		gjp2.gjLoad5();
@@ -87,6 +94,8 @@ public class Observador {
 		gep2.geLoad7();
 		System.out.print("\nL08: ");
 		System.out.print("\nL09: ");
+		System.out.println();
+		gnp2.gnL09();
 		System.out.print("\nL10: ");
 		System.out.print("\nL11: ");
 		gjp2.gjLoad11();
@@ -97,6 +106,7 @@ public class Observador {
 		gep2.geRec1();
 		System.out.print("\nR02: ");
 		System.out.print("\nR03: ");
+		gnp2.gnR03();
 		System.out.print("\nR04: ");
 		System.out.print("\nR05: ");
 		gjp2.gjRec5();
