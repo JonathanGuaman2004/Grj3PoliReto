@@ -1,9 +1,8 @@
-public class ZambranoJhojanPrt2 {
-    /**Clases poliretos 2da parte
+/**Clases poliretos 2da parte
  *@author ZambranoJhojan
  *@version 1.0
  */
-public class ZambranoJhojanPart2 {
+public class ZambranoJhojanPrt2 {
     private String fraseCuatro;
 
     /**
@@ -177,7 +176,5 @@ public class ZambranoJhojanPart2 {
     public void setFraseCuatro(String fraseCuatro) {
         this.fraseCuatro = fraseCuatro;
     }
-
-}
 
 }
