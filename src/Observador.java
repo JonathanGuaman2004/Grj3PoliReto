@@ -89,6 +89,7 @@ public class Observador {
 		System.out.println("\nL05: ");
 		gjp2.gjLoad5();
 		System.out.print("\nL06: ");
+		System.out.println();
 		gdp2.dgL06();
 		System.out.print("\nL07: ");
 		gep2.geLoad7();
